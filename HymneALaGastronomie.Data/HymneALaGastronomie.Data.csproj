@@ -4,4 +4,8 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\HymneALaGastronomie.CoreBusiness\HymneALaGastronomie.CoreBusiness.csproj" />
+  </ItemGroup>
+
 </Project>
