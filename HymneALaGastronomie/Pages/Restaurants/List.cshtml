@@ -22,11 +22,21 @@
     <table class="table">
         @foreach(var restaurant in Model.Restaurants)
         {
-            <tr>
-                <td>@restaurant.Name</td>
-                <td>@restaurant.Location</td>
-                <td>@restaurant.Cuisine</td>
-            </tr>
+        <tr>
+            <td>@restaurant.Name</td>
+            <td>@restaurant.Location</td>
+            <td>@restaurant.Cuisine</td>
+            <td>
+            <a asp-page="./Detail" 
+               asp-route-restaurantId="@restaurant.Id" 
+               class="btn btn-lg">
+                <span class="input-group-btn">
+                    <i class="fas fa-search-plus" style="font-size:24px"></i>
+                </span>
+            </a>
+            </td>
+            <td></td>
+        </tr>
         }
     </table>
 

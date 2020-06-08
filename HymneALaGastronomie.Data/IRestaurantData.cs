@@ -8,6 +8,7 @@ namespace HymneALaGastronomie.Data
     public interface IRestaurantData
     {
         IEnumerable<Restaurant> GetRestaurantsByName(string name);
+        Restaurant GetRestaurantById(int id);
     }
 
     public class InMemoryRestaurantData : IRestaurantData
@@ -25,12 +26,18 @@ namespace HymneALaGastronomie.Data
                 new Restaurant { Id = 5, Name = "Le Cèdre du Liban", Location = "Namur", Cuisine = CuisineType.Lebanese}
             };
         }
+
         public IEnumerable<Restaurant> GetRestaurantsByName(string name = null)
         {
             return from r in restaurants
                    where string.IsNullOrEmpty(name) || r.Name.StartsWith(name)
                    orderby r.Name
                    select r;
+        }
+
+        public Restaurant GetRestaurantById(int id)
+        {
+            return restaurants.SingleOrDefault(r => r.Id == id);
         }
     }
 }
