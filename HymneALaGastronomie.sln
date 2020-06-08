@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30128.74
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HymneALaGastronomie", "HymneALaGastronomie\HymneALaGastronomie.csproj", "{8DA46BEE-00AF-417D-9685-DA625730597D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8DA46BEE-00AF-417D-9685-DA625730597D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DA46BEE-00AF-417D-9685-DA625730597D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DA46BEE-00AF-417D-9685-DA625730597D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DA46BEE-00AF-417D-9685-DA625730597D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B704F0D8-695A-4312-85EB-8D69B746B486}
+	EndGlobalSection
+EndGlobal
