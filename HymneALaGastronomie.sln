@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HymneALaGastronomie", "Hymn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HymneALaGastronomie.CoreBusiness", "HymneALaGastronomie.CoreBusiness\HymneALaGastronomie.CoreBusiness.csproj", "{BE214765-FD04-43A4-98EB-EB2F6A7A0F6A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HymneALaGastronomie.Data", "HymneALaGastronomie.Data\HymneALaGastronomie.Data.csproj", "{4A1452C4-CD20-4E85-9C9C-EE6CA40F021F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{BE214765-FD04-43A4-98EB-EB2F6A7A0F6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE214765-FD04-43A4-98EB-EB2F6A7A0F6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE214765-FD04-43A4-98EB-EB2F6A7A0F6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A1452C4-CD20-4E85-9C9C-EE6CA40F021F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A1452C4-CD20-4E85-9C9C-EE6CA40F021F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A1452C4-CD20-4E85-9C9C-EE6CA40F021F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A1452C4-CD20-4E85-9C9C-EE6CA40F021F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
