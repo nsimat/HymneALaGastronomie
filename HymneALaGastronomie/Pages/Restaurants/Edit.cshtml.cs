@@ -25,10 +25,19 @@ namespace HymneALaGastronomie.Pages.Restaurants
             this.htmlHelper = htmlHelper;
         }
 
-        public IActionResult OnGet(int restaurantId)
+        public IActionResult OnGet(int? restaurantId)
         {
             Cuisines = htmlHelper.GetEnumSelectList<CuisineType>();
-            Restaurant = restaurantData.GetRestaurantById(restaurantId);
+
+            if (restaurantId.HasValue)
+            {
+                Restaurant = restaurantData.GetRestaurantById(restaurantId.Value);
+            }
+            else
+            {
+                Restaurant = new Restaurant();
+            }
+            
 
             if(Restaurant == null)
             {
@@ -39,10 +48,24 @@ namespace HymneALaGastronomie.Pages.Restaurants
 
         public IActionResult OnPost()
         {
-            Restaurant = restaurantData.UpdateRestaurant(Restaurant);
-            restaurantData.Commit();
+            if (!ModelState.IsValid)
+            {
+                Cuisines = htmlHelper.GetEnumSelectList<CuisineType>();
+                return Page();                
+            }
 
-            return RedirectToPage("./List");
+            if(Restaurant.Id > 0)
+            {
+                restaurantData.UpdateRestaurant(Restaurant);
+            }
+            else
+            {
+                restaurantData.CreateRestaurant(Restaurant);
+            }
+                        
+            restaurantData.Commit();
+            TempData["Message"] = "Restaurant succesfully saved!";
+            return RedirectToPage("./Detail", new { restaurantId = Restaurant.Id });           
         }
     }
 }

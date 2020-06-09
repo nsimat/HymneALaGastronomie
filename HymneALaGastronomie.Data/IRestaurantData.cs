@@ -10,6 +10,7 @@ namespace HymneALaGastronomie.Data
         IEnumerable<Restaurant> GetRestaurantsByName(string name);
         Restaurant GetRestaurantById(int id);
         Restaurant UpdateRestaurant(Restaurant updatedRestaurant);
+        Restaurant CreateRestaurant(Restaurant newRestaurant);
         int Commit();
     }
 
@@ -40,6 +41,14 @@ namespace HymneALaGastronomie.Data
         public Restaurant GetRestaurantById(int id)
         {
             return restaurants.SingleOrDefault(r => r.Id == id);
+        }
+
+        public Restaurant CreateRestaurant(Restaurant newRestaurant)
+        {
+            restaurants.Add(newRestaurant);
+            newRestaurant.Id = restaurants.Max(r => r.Id) + 1;
+
+            return newRestaurant;
         }
 
         public Restaurant UpdateRestaurant(Restaurant updatedRestaurant)
