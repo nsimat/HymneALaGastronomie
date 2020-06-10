@@ -29,7 +29,7 @@ namespace HymneALaGastronomie
             {
                 options.UseSqlServer(Configuration.GetConnectionString("HymneALaGastronomieDb"));
             });
-            services.AddSingleton<IRestaurantData, InMemoryRestaurantData>();
+            services.AddScoped<IRestaurantData, RestaurantDataRepository>();
 
             services.AddRazorPages();
         }
