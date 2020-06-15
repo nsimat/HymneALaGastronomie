@@ -6,24 +6,28 @@
         <h3>@Model.Name</h3>
     </div>
     <div class="card-body">
-        <span>Location: @Model.Location</span>
-        <span>Cuisine: @Model.Cuisine</span>
+        <span>
+            <b>Location:</b> @Model.Location
+        </span>
+        <span>
+            <b>Cuisine:</b> @Model.Cuisine
+        </span>
     </div>
     <div class="card-footer">
         <a asp-page="./Detail"
            asp-route-restaurantId="@Model.Id"
-           class="btn btn-lg">            
-                <i class="fas fa-search-plus" style="font-size:22px"></i>            
+           class="btn btn-lg">
+            <i class="fas fa-search-plus" style="font-size:22px"></i>
         </a>
         <a asp-page="./Edit"
            asp-route-restaurantId="@Model.Id"
-           class="btn btn-lg">            
-                <i class="fas fa-edit" style="font-size:22px"></i>           
+           class="btn btn-lg">
+            <i class="fas fa-edit" style="font-size:22px"></i>
         </a>
         <a asp-page="./Delete"
            asp-route-restaurantId="@Model.Id"
-           class="btn btn-lg">            
-                <i class="fas fa-trash-alt" style="font-size:22px"></i>            
+           class="btn btn-lg">
+            <i class="fas fa-trash-alt" style="font-size:22px"></i>
         </a>
     </div>
 </div>

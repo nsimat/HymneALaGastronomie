@@ -22,8 +22,4 @@
     <ProjectReference Include="..\HymneALaGastronomie.Data\HymneALaGastronomie.Data.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Pages\Shared\Components\RestaurantCount\" />
-  </ItemGroup>
-
 </Project>

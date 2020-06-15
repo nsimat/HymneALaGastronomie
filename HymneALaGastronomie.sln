@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30128.74
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HymneALaGastronomie", "HymneALaGastronomie\HymneALaGastronomie.csproj", "{8DA46BEE-00AF-417D-9685-DA625730597D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HymneALaGastronomie", "HymneALaGastronomie\HymneALaGastronomie.csproj", "{8DA46BEE-00AF-417D-9685-DA625730597D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HymneALaGastronomie.CoreBusiness", "HymneALaGastronomie.CoreBusiness\HymneALaGastronomie.CoreBusiness.csproj", "{BE214765-FD04-43A4-98EB-EB2F6A7A0F6A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HymneALaGastronomie.CoreBusiness", "HymneALaGastronomie.CoreBusiness\HymneALaGastronomie.CoreBusiness.csproj", "{BE214765-FD04-43A4-98EB-EB2F6A7A0F6A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HymneALaGastronomie.Data", "HymneALaGastronomie.Data\HymneALaGastronomie.Data.csproj", "{4A1452C4-CD20-4E85-9C9C-EE6CA40F021F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HymneALaGastronomie.Data", "HymneALaGastronomie.Data\HymneALaGastronomie.Data.csproj", "{4A1452C4-CD20-4E85-9C9C-EE6CA40F021F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
