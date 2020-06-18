@@ -32,6 +32,7 @@ namespace HymneALaGastronomie
             services.AddScoped<IRestaurantData, RestaurantDataRepository>();
 
             services.AddRazorPages();
+            services.AddControllers();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -58,6 +59,7 @@ namespace HymneALaGastronomie
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();
+                endpoints.MapControllers();
             });
         }
     }
