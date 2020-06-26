@@ -32,7 +32,7 @@ namespace HymneALaGastronomie.Pages.Restaurants
 
         public void OnGet()
         {
-            logger.LogError("Executing ListModel");
+            logger.LogError("Executing ListModel...");
             Message = configuration["Message"];
             Restaurants = restaurantData.GetRestaurantsByName(SearchTerm);
         }

@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "dependencies": {
     "datatables.net-bs4": "^1.10.21"
+  },
+  "devDependencies": {
+    "@angular/cli": "^10.0.0"
   }
 }
