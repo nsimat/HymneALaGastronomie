@@ -18,9 +18,7 @@ namespace HymneALaGastronomie
         {
             var host = CreateHostBuilder(args).Build();
 
-                MigrateDatabase(host);
-                
-                
+                MigrateDatabase(host);                
                 
                 host.Run();
         }

@@ -39,19 +39,36 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">        
+    <footer class="border-top footer text-muted">
         <div class="container">
             @RenderSection("footer", required: false)
             <vc:restaurant-count></vc:restaurant-count>
-            &copy; 2020 - HymneALaGastronomie - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            <p>
+                &copy; @DateTime.Now.Year - HymneALaGastronomie - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            </p>
             <img src="/HymneALaBouffe.png" alt="Logo de l'hymne à la bouffe" />
         </div>
     </footer>
 
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    <script src="~/lib/font-awesome/js/all.js"></script>
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        <script src="~/lib/font-awesome/js/all.js"></script>
+    </environment>
+
+    <environment exclude="Development">
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.4.1.min.js"
+                asp-fallback-src="~/node_modules/jquery/dist/jquery.js"
+                asp-fallback-test="window.jQuery">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/4.3.1/bootstrap.min.js"
+                asp-fallback-src="~/node_modules/bootstrap/dist/js/bootstrap.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal">
+        </script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        <script src="~/lib/font-awesome/js/all.js"></script>
+    </environment>
 
     @RenderSection("Scripts", required: false)
 </body>
